@@ -1,0 +1,29 @@
+{
+  "name": "medium-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false
+  },
+  "author": "geekrodion",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1"
+  },
+  "dependencies": {
+    "puppeteer": "^5.2.1"
+  }
+}
